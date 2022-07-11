@@ -13,7 +13,9 @@
 % 2. Data_File_String: 'String of data file to read including extension 
 % Data_File_String example: Data_File_String = 'chb01_01.edf'; % in strings
 
-% I reccommend placing all the data into one folder and remove the subfolders 
+% data = read_data(path, Data_File_String); % call funciton like this...
+
+% ******** I reccommend placing all the data into one folder and remove the subfolders ******** %
 
 % Outputs 
 %1 Datastruct: Statistically meaningful channels ONLY of all channels with time-tag
@@ -132,7 +134,6 @@ end
 for i =1:length(temp_var)
     ind_extract(i) = find(temp_var{i} > 0);
 end
-
 end
 
 
